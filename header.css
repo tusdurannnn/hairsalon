@@ -1,0 +1,955 @@
+@charset"utf-8";
+
+/*===========================
+            ALL
+===========================*/
+body {
+    margin: 0px;
+    font-family: ro-nikkatsu-sei-kai-std, serif;
+}
+
+h2 {
+    font-size: 43px;
+    letter-spacing: 0.2em;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+.cleaarfix {
+    clear: both;
+}
+
+/*===========================
+          header
+===========================*/
+
+a {
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: 0.13em;
+    font-size: 18px;
+}
+
+a.reserve::before {
+    content: "▶";
+    padding-right: 10px;
+}
+a.reserve {
+    padding: 20px;
+    color: #fff;
+    background-color: rgba(140,98,57,0.6);
+}
+
+a.reserve:hover {
+    background-color: rgba(168,131,96,0.6);
+}
+
+.abold {
+    font-weight: bold;
+}
+
+li {
+    list-style: none;
+    padding: 20px 35px;
+}
+
+header {
+    background-color: rgba(255,255,255,0.7);
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+.mainimage {
+   width: 100%;
+}
+
+.subtitle {
+    display: inline-block;
+    background-color: rgba(255,255,255,0.5);
+    padding: 40px;
+    position: absolute;
+    top: 500px;
+    right: 0;
+    z-index: 1;
+}
+
+span {
+    font-size: 20px;
+}
+
+h1 {
+    letter-spacing: 0.2em;
+    font-size:52px;
+}
+
+.nav_toggle {
+    display: none;
+}
+/*===========================
+     header メディアクエリ
+===========================*/
+
+@media screen and (max-width:576px) {
+    /*=== ハンバーガー用 ===*/
+    .nav_toggle {
+    display: block;
+    position: relative;
+    width: 1.75rem;
+    height: 1.5rem;
+    margin: 15px;
+}
+    .nav_toggle i {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    transition: transform .5s, opacity .5s;
+}
+    .nav_toggle i:nth-child(1) {
+    top: 0;
+}
+    .nav_toggle i:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+    .nav_toggle i:nth-child(3) {
+    bottom: 0;
+}
+    
+    .nav_toggle.show i:nth-child(1) {
+    transform: translateY(10px) rotate(-45deg);
+}
+    .nav_toggle.show i:nth-child(2) {
+    opacity: 0;
+}
+    .nav_toggle.show i:nth-child(3) {
+    transform: translateY(-12px) rotate(45deg);
+}
+    nav {
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+}
+    nav.show {
+    opacity: 1;
+    visibility: visible;
+}
+    /*=== ハンバーガー以外 ===*/
+    header {
+        background-color: rgba(255,255,255,0);
+    }
+    
+    a {
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: 0.13em;
+    font-size: 13px;
+}
+    
+    a.reserve {
+    padding: 10px;
+    color: #fff;
+    background-color: rgba(140,98,57,0.6);
+}
+    .subtitle {
+    display: inline-block;
+    background-color: rgba(255,255,255,0.5);
+    padding: 15px;
+    position: absolute;
+    top: 175px;
+    right: 0;
+    z-index: 1;
+}
+    h1 {
+    letter-spacing: 0.17em;
+    font-size: 20px;
+} 
+    .span {
+        font-size: 10px;
+    }
+    
+    li {
+    list-style: none;
+    padding: 20px;
+}
+}
+@media screen and (min-width:576px) and ( max-width:768px) {
+   /*=== ハンバーガー用 ===*/
+    .nav_toggle {
+    display: block;
+    position: relative;
+    width: 1.75rem;
+    height: 1.5rem;
+    margin: 15px;
+}
+    .nav_toggle i {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    transition: transform .5s, opacity .5s;
+}
+    .nav_toggle i:nth-child(1) {
+    top: 0;
+}
+    .nav_toggle i:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+    .nav_toggle i:nth-child(3) {
+    bottom: 0;
+}
+    
+    .nav_toggle.show i:nth-child(1) {
+    transform: translateY(10px) rotate(-45deg);
+}
+    .nav_toggle.show i:nth-child(2) {
+    opacity: 0;
+}
+    .nav_toggle.show i:nth-child(3) {
+    transform: translateY(-12px) rotate(45deg);
+}
+    nav {
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+}
+    nav.show {
+    opacity: 1;
+    visibility: visible;
+}
+    /*=== ハンバーガー以外 ===*/
+    header {
+        background-color: rgba(255,255,255,0);
+    }
+    
+    a.reserve {
+    padding: 10px 15px;
+    color: #fff;
+    background-color: rgba(140,98,57,0.6);
+}
+    .subtitle {
+    display: inline-block;
+    background-color: rgba(255,255,255,0.5);
+    padding: 25px;
+    position: absolute;
+    top: 194px;
+    right: 0;
+    z-index: 1;
+}
+    h1 {
+    letter-spacing: 0.17em;
+    font-size: 33px;
+} 
+    .span {
+        font-size: 16px;
+    }
+    li {
+    list-style: none;
+    padding: 20px;
+}
+}
+
+@media screen and (min-width:768px) and ( max-width:1000px) {
+    /*=== ハンバーガー用 ===*/
+    .nav_toggle {
+    display: block;
+    position: relative;
+    width: 2.4rem;
+    height: 1.6rem;
+    margin: 15px;
+}
+    .nav_toggle i {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    position: absolute;
+    transition: transform .5s, opacity .5s;
+}
+    .nav_toggle i:nth-child(1) {
+    top: 0;
+}
+    .nav_toggle i:nth-child(2) {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+    .nav_toggle i:nth-child(3) {
+    bottom: 0;
+}
+    
+    .nav_toggle.show i:nth-child(1) {
+    transform: translateY(10px) rotate(-45deg);
+}
+    .nav_toggle.show i:nth-child(2) {
+    opacity: 0;
+}
+    .nav_toggle.show i:nth-child(3) {
+    transform: translateY(-12px) rotate(45deg);
+}
+    nav {
+    position: fixed;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .5s;
+}
+    nav.show {
+    opacity: 1;
+    visibility: visible;
+}
+    /*=== ハンバーガー以外 ===*/
+    header {
+        background-color: rgba(255,255,255,0);
+    }
+    
+    a.reserve {
+    padding: 10px 15px;
+    color: #fff;
+    background-color: rgba(140,98,57,0.6);
+}
+    .subtitle {
+    display: inline-block;
+    background-color: rgba(255,255,255,0.5);
+    padding: 25px;
+    position: absolute;
+    top: 250px;
+    right: 0;
+    z-index: 1;
+}
+    h1 {
+    letter-spacing: 0.17em;
+    font-size: 42px;
+}
+    li {
+    list-style: none;
+    padding: 20px;
+}
+}
+
+@media screen and ( min-width:1000px) {
+   .nav_menu_ul {
+    display: flex;
+} 
+}
+
+
+/*===========================
+          concept
+===========================*/
+
+.concept {
+    padding-top: 170px ;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.h2concept {
+   border-left: 3px solid #999999;
+    padding-left: 30px;
+    margin-bottom: 80px;
+}
+
+.moreconcept {
+    background-color: #4D4D4D;
+    padding: 15px;
+    color: #fff;
+}
+
+.moreconcept:hover {
+    background-color: #777776;
+}
+
+.p1,.p2,.p3 {
+    margin-bottom: 30px;
+}
+
+.p4 {
+    margin-bottom: 50px;
+}
+
+.c-picture {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    margin-left: 70px;
+}
+
+.c-picture1  {
+    width: 90%;
+}
+
+.c-picture2  {
+    width: 90%;
+    position: relative;
+    top: 13%;
+    left: 50%;
+}
+
+.conceptp {
+    line-height: 200%;
+    letter-spacing: 0.15em;
+
+}
+/*===========================
+　　　 concept　メディアクエリ
+===========================*/
+@media screen and (max-width:576px) {
+   
+}
+
+@media screen and (min-width:576px) and ( max-width:768px) {
+    .concept {
+    padding-top: 170px;
+    display: flex;
+    margin: 0 auto;
+    max-width: 550px;
+}
+    
+}
+
+@media screen and (min-width:768px) and ( max-width:1000px){
+    .concept {
+    padding-top: 170px;
+    display: flex;
+    margin: 0 auto;
+    max-width: 800px;
+}
+    .c-picture2 {
+    width: 73%;
+    position: relative;
+    top: 38%;
+    left: 25%;
+}
+    .c-picture1 {
+    width: 83%;
+    position: relative;
+    right: 10%;
+}
+}
+
+@media screen and (min-width:1000px) {
+    
+}
+/*===========================
+          About
+===========================*/
+
+.about {
+    padding-top: 230px;
+    margin: 0 auto;
+    max-width: 1000px;
+} 
+
+.h2about {
+    border-left: 3px solid #999999;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.aboutp {
+    padding-left: 25p
+        .c-picture2 {
+    width: 72%;
+    position: relative;
+    top: 16%;
+    left: 29%;
+}x;
+    margin-bottom: 80px;
+}
+
+.worries1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 50px;
+}
+
+.worries2 {
+    display: flex;
+    justify-content: space-between;
+     padding: 30px 50px;
+}
+
+.worries3 {
+    display: flex;
+    justify-content: space-between;
+     padding: 30px 50px;
+}
+
+.aboutspan {
+    font-size:65px;
+}
+
+.a-p1,.a-p2,.a-p3 {
+    border: solid 2px #CCCCCC;
+    padding: 20px 30px;
+    display: inline;
+    letter-spacing: 0.15em;
+    width: 380px;
+    height: 130px;
+    font-size: 20px;
+    line-height: 170%;
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.a-p1,.a-p3 {
+   position: relative;
+    top: 115px;
+    right: 2%;
+}
+
+.worriesp {
+     display:table;
+}
+
+.a-p2 {
+    position: relative;
+    top: 109px;
+    left: -1%;
+}
+.aboutspan {
+    position: relative;
+    top: 64px;
+    left: 5%;
+    z-index: 5;
+}
+
+.w-p {
+    width: 45%;
+}
+
+.worries3 {
+    margin-bottom: 50px;
+}
+
+.more {
+    background-color: #4D4D4D;
+    padding: 5px 20px;
+    color: #fff;
+   float: right;
+}
+
+.more:hover {
+    background-color: #777776;
+}
+
+/*===========================
+     About　メディアクエリ
+===========================*/
+@media screen and (max-width:576px) {
+    
+}
+
+@media screen and (min-width:576px) and ( max-width:768px) {
+    .about {
+    padding-top: 230px;
+    margin: 0 auto;
+    max-width: 550px;
+} 
+}
+
+@media screen and (min-width:768px) and ( max-width:1000px){
+    .about {
+    padding-top: 230px;
+    margin: 0 auto;
+    max-width: 800px;
+} 
+    .a-p1, .a-p2, .a-p3 {
+    border: solid 2px #CCCCCC;
+    padding: 15px 25px;
+    display: inline;
+    letter-spacing: 0.15em;
+    width: 380px;
+    height: 130px;
+    font-size: 17px;
+    line-height: 170%;
+    display: table-cell;
+    vertical-align: middle;
+}
+    .a-p1, .a-p3 {
+    position: relative;
+    top: 63px;
+    right: 7%;
+}
+    .aboutspan {
+    position: relative;
+    top: 15px;
+    left: 2%;
+    z-index: 5;
+}
+    .a-p2 {
+    position: relative;
+    top: 58px;
+    left: -7%;
+}
+}
+
+/*===========================
+          Gallery
+===========================*/
+
+div.gallery {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.h2gallery {
+    border-bottom: 3px solid #999999;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.galleryp {
+    margin-bottom: 80px
+}
+
+.picturegellery1 {
+    margin-bottom: 50px;
+}
+
+.insta {
+    border: 1px solid #000000;
+    padding: 10px 20px;
+}
+
+.fab {
+    padding-right: 10px;
+}
+
+.insta:hover {
+    border: none;
+    background-color: #4D4D4D;
+    color: #fff;
+}
+
+.fab:hover {
+    color: #fff;
+}
+/*===========================
+    Gallery　メディアクエリ
+===========================*/
+@media screen and (max-width:576px) {
+    
+}
+
+@media screen and (min-width:576px) and ( max-width:768px) {
+    
+}
+
+@media screen and (min-width:768px) and ( max-width:1000px){
+    
+}
+
+
+/*===========================
+            Menu
+===========================*/
+.manu {
+    padding-top: 230px ;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.menu1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.h2manu {
+    border-left: 3px solid #999999;
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+
+.manup {
+    margin-bottom: 25px;
+}
+
+.manunaiyou {
+    background-color: rgba(232,226,221,0.7);
+    height: 240px;
+    letter-spacing: 0.2em;
+    line-height: 200%;
+    width: 50%;
+    position: relative;
+    top: 100px;
+    left: 2%;
+    z-index: 2;
+    display:table;
+    padding: 25px;
+}
+
+.manunaiyou1 {
+    display:table-cell;
+    vertical-align:middle;
+}
+
+.menupic {
+    width: 50%;
+    position: relative;
+    top: -70px;
+}
+
+/*===========================
+     Menu　メディアクエリ
+===========================*/
+@media screen and (max-width:576px) {
+    
+}
+
+@media screen and (min-width:576px) and ( max-width:768px) {
+    .manu {
+    padding-top: 230px ;
+    margin: 0 auto;
+    max-width: 550px;
+}
+}
+
+@media screen and (min-width:768px) and ( max-width:1000px){
+    .manu {
+    padding-top: 230px ;
+    margin: 0 auto;
+    max-width: 800px;
+}
+    .menupic {
+    width: 45%;
+    position: relative;
+    top: -70px;
+    right: 13%;
+}
+    .manup {
+    margin-bottom: 25px;
+    font-size: 13px;
+}
+}
+
+/*===========================
+            Blog
+===========================*/
+.blog {
+    margin: 250px 200px;
+    text-align: center;
+}
+
+.h2blog {
+    border-bottom: 3px solid #999999;
+    margin-bottom: 80px;
+    display: inline-block;
+}
+
+.blogall {
+    display: flex;
+    max-width: 785px;
+    margin: 0 auto;
+}
+
+.blog1,.blog2,.blog3 {
+    width: 240px;
+    border: 1px solid #2D2D2D;
+    margin: 0px 15px;
+    padding: 15px;
+}
+
+dl {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+dt {
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    padding-bottom: 8px;
+}
+
+dd {
+    font-size: 14px;
+}
+
+.readmore {
+    font-size: 14px;
+    float: right;
+}
+.readmore::before {
+    content: "▶";
+    font-size: 14px;
+    padding-right: 3px;
+}
+
+.readmore:hover {
+    color: #999999;
+}
+
+/*===========================
+      Blog　メディアクエリ
+===========================*/
+
+@media screen and (max-width:576px) {
+    
+}
+
+@media screen and (min-width:576px) and ( max-width:768px) {
+    
+}
+
+@media screen and (min-width:768px) and ( max-width:1000px){
+    .blog {
+    margin: 250px 0px;
+    text-align: center;
+}
+}
+/*===========================
+           Access
+===========================*/
+.access {
+    padding-top: 130px ;
+    margin: 0 auto;
+    max-width: 1000px;
+    margin-bottom: 200px;
+}
+
+.h2access{
+    border-left: 3px solid #999999;
+    padding-left: 30px;
+    margin-bottom: 70px;
+}
+
+.accessflex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accessp {
+    background-color: rgba(242,242,242,0.7);
+    padding: 30px 80px 30px 65px;
+    letter-spacing: 0.15em;
+    position: relative;
+    top: 0px;
+    left: 3%;
+}
+
+.accessp1,.accessp3,.accessp5 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.accessp2,.accessp4 {
+    margin-bottom: 30px;
+}
+
+.map {
+    position: relative;
+    top: -125px;
+    right: 10px;
+    z-index: 2;
+}
+
+/*===========================
+    Access　メディアクエリ
+===========================*/
+@media screen and (max-width:576px) {
+    .iframe1{
+        display: none;
+    }
+}
+
+@media screen and (min-width:576px) and ( max-width:768px) {
+    .iframe1{
+        display: none;
+    }
+    
+    .access {
+    padding-top: 130px ;
+    margin: 0 auto;
+    max-width: 550px;
+    margin-bottom: 200px;
+}
+}
+
+@media screen and (min-width:768px) and ( max-width:1000px){
+    .access {
+    padding-top: 130px ;
+    margin: 0 auto;
+    max-width: 800px;
+    margin-bottom: 200px;
+}
+    .accessp {
+    background-color: rgba(242,242,242,0.7);
+    padding: 30px 30px;
+    letter-spacing: 0.15em;
+}
+    .iframe1{
+        display: none;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .iframe2 {
+    display: none;
+}
+}
+
+/*===========================
+           footer
+===========================*/
+
+footer{
+    background-color: #E6E6E6;
+}
+
+.footerul {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/*===========================
+     footer　メディアクエリ
+===========================*/
+@media screen and (max-width:576px) {
+    
+}
+
+@media screen and (min-width:576px) and ( max-width:768px) {
+    
+}
+
+@media screen and (min-width:768px) and ( max-width:1000px){
+    .footerul {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+}
