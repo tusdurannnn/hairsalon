@@ -367,12 +367,6 @@ h1 {
           concept
 ===========================*/
 
-.concept {
-    padding-top: 170px ;
-    display: flex;
-    margin: 0 auto;
-    max-width: 1000px;
-}
 
 .h2concept {
    border-left: 3px solid #999999;
@@ -419,13 +413,12 @@ h1 {
 .conceptp {
     line-height: 200%;
     letter-spacing: 0.15em;
-
 }
 /*===========================
 　　　 concept　メディアクエリ
 ===========================*/
 @media screen and (max-width:576px) {
-   
+    
 }
 
 @media screen and (min-width:576px) and ( max-width:768px) {
@@ -438,28 +431,47 @@ h1 {
     
 }
 
-@media screen and (min-width:768px) and ( max-width:1000px){
+@media screen and (min-width:768px) and ( max-width:991px){
     .concept {
     padding-top: 170px;
-    display: flex;
     margin: 0 auto;
     max-width: 800px;
 }
-    .c-picture2 {
-    width: 73%;
-    position: relative;
-    top: 38%;
-    left: 25%;
+    .c-picture2,.c-picture1 {
+    display: none;
 }
-    .c-picture1 {
-    width: 83%;
+    .c-picture3 {
+    width: 110%;
     position: relative;
+    bottom: 455px;
     right: 10%;
 }
+ 
+    .h2concept {
+   border-left: none;
+    padding-left: 30px;
+    margin-bottom: 80px;
+}
+    .conceptp {
+        position: relative;
+        z-index: 5;
+        text-align: center;
+    }
+    
 }
 
+
 @media screen and (min-width:1000px) {
-    
+    .c-picture3 {
+    display: none;
+}
+    .concept {
+    padding-top: 170px ;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
 }
 /*===========================
           About
@@ -572,48 +584,65 @@ h1 {
 }
 
 @media screen and (min-width:576px) and ( max-width:768px) {
-    .about {
-    padding-top: 230px;
-    margin: 0 auto;
-    max-width: 550px;
-} 
+    
 }
 
-@media screen and (min-width:768px) and ( max-width:1000px){
+@media screen and (min-width:768px) and ( max-width:991px){
     .about {
-    padding-top: 230px;
-    margin: 0 auto;
+    margin: -400px auto 0 auto;
     max-width: 800px;
-} 
-    .a-p1, .a-p2, .a-p3 {
-    border: solid 2px #CCCCCC;
-    padding: 15px 25px;
-    display: inline;
-    letter-spacing: 0.15em;
-    width: 380px;
-    height: 130px;
-    font-size: 17px;
-    line-height: 170%;
-    display: table-cell;
-    vertical-align: middle;
 }
-    .a-p1, .a-p3 {
+    .a-p1, .a-p2, .a-p3 {
+    border: none;
     position: relative;
-    top: 63px;
-    right: 7%;
+    left: 116%;
+    top: -14px;
+}
+    .w-p {
+    width: 43%;
+    position: relative;
+    top: -207px;
+    left: 27px;
+}
+    .w-p1 {
+    width: 41%;
+    position: relative;
+    top: -207px;
+    left: 27px;
+}
+    .worries1sp, .worries2sp, .worries3sp {
+    border: solid 1px #CCCCCC;
+    height: 262px;
+    margin-bottom: 20px;
 }
     .aboutspan {
     position: relative;
-    top: 15px;
-    left: 2%;
+    left: 50%;
+    top: 25px;
     z-index: 5;
 }
-    .a-p2 {
-    position: relative;
-    top: 58px;
-    left: -7%;
+   
+    .h2about {
+    padding-left: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+        border: none;
+}
+    .aboutp {
+    text-align: center;
+    margin-bottom: 30px;
+}
+    .worries1,.worries2,.worries3 {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .worries1sp, .worries2sp, .worries3sp {
+    display: none;
 }
 }
+
 
 /*===========================
           Gallery
@@ -667,10 +696,24 @@ div.gallery {
     
 }
 
-@media screen and (min-width:768px) and ( max-width:1000px){
-    
+@media screen and (min-width:576px) and ( max-width:991px){
+    .picturegellery,.picturegellery1 {
+        display: none;
+    }
+    .gpic{
+        width: 35%;
+        padding: 5px;
+    }
+    .picturegellery2sp {
+        margin-bottom: 35px;
+    }
 }
 
+@media screen and (min-width:991px) {
+    .picturegellerysp,.picturegellery1sp,.picturegellery2sp {
+    display: none;
+}
+}
 
 /*===========================
             Menu
@@ -751,6 +794,13 @@ div.gallery {
     .manup {
     margin-bottom: 25px;
     font-size: 13px;
+}
+    
+}
+
+@media screen and (min-width:1000px) {
+    .picturegellerysp,.picturegellery1sp,.picturegellerysp {
+    display: none;
 }
 }
 
