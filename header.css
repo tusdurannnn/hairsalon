@@ -962,7 +962,7 @@ dd {
     letter-spacing: 0.15em;
     position: relative;
     top: 0px;
-    left: 3%;
+    left: 4%;
 }
 
 .accessp1,.accessp3,.accessp5 {
@@ -1035,10 +1035,6 @@ dd {
     background-color: rgba(242,242,242,0.7);
     padding: 30px 50px;
     letter-spacing: 0.15em;
-    width: 80%;
-    margin: 0 50px;
-    margin: 0 atuo;
-    /* text-align: center; */
 }
 }
 
