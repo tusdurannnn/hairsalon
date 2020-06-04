@@ -935,6 +935,7 @@ dd {
     margin: 250px 0px;
     text-align: center;
     margin-top: 0;
+    margin-bottom: 50px;
 }
 }
 /*===========================
@@ -953,10 +954,7 @@ dd {
     margin-bottom: 70px;
 }
 
-.accessflex {
-    display: flex;
-    justify-content: space-between;
-}
+
 
 .accessp {
     background-color: rgba(242,242,242,0.7);
@@ -977,26 +975,16 @@ dd {
     margin-bottom: 30px;
 }
 
-.map {
-    position: relative;
-    top: -125px;
-    right: 10px;
-    z-index: 2;
-}
 
 /*===========================
     Access　メディアクエリ
 ===========================*/
 @media screen and (max-width:576px) {
-    .iframe1{
-        display: none;
-    }
+   
 }
 
 @media screen and (min-width:576px) and ( max-width:768px) {
-    .iframe1{
-        display: none;
-    }
+    
     
     .access {
     padding-top: 130px ;
@@ -1015,17 +1003,42 @@ dd {
 }
     .accessp {
     background-color: rgba(242,242,242,0.7);
-    padding: 30px 30px;
+    padding: 30px 50px;
     letter-spacing: 0.15em;
+    width: 80%;
+    margin: 0 50px;
+    margin: 0 atuo;
+    /* text-align: center; */
 }
-    .iframe1{
-        display: none;
-    }
+    
+.map {
+    text-align: center;
+    padding-top: 20px;
+}
 }
 
 @media screen and (min-width:1000px) {
     .iframe2 {
     display: none;
+}
+    .accessflex {
+    display: flex;
+    justify-content: space-between;
+}
+    .map {
+    position: relative;
+    top: -125px;
+    right: 10px;
+    z-index: 2;
+}
+    .accessp {
+    background-color: rgba(242,242,242,0.7);
+    padding: 30px 50px;
+    letter-spacing: 0.15em;
+    width: 80%;
+    margin: 0 50px;
+    margin: 0 atuo;
+    /* text-align: center; */
 }
 }
 
