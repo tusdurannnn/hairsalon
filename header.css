@@ -418,40 +418,11 @@ h1 {
 　　　 concept　メディアクエリ
 ===========================*/
 @media screen and (max-width:576px) {
-    .p1, .p2, .p3 {
-    margin-bottom: 30px;
-    font-size: 12.2px;
-}
-    .c-picture3 {
-    width: 120%;
-    position: relative;
-    bottom: 455px;
-    /* top: 67%; */
-    right: 13%;
-    bottom: 515px;
-}
-    .a-p1, .a-p2, .a-p3 {
-    border: none;
-    /* position: relative; */
-    left: 98%;
-    top: -14px;
-}
-    .w-p {
-    width: 43%;
-    position: relative;
-    top: -244px;
-    left: 27px;
-}
-    .w-p1 {
-    width: 41%;
-    position: relative;
-    top: -251px;
-    left: 27px;
-}
+    
 }
 
 @media screen and (min-width:576px) and ( max-width:768px) {
-    .concept {
+ .concept {
     padding-top: 170px;
     display: flex;
     margin: 0 auto;
@@ -461,31 +432,6 @@ h1 {
 }
 
 @media screen and (min-width:768px) and ( max-width:991px){
-    .concept {
-    padding-top: 170px;
-    margin: 0 auto;
-    max-width: 800px;
-}
-    .c-picture2,.c-picture1 {
-    display: none;
-}
-    .c-picture3 {
-    width: 110%;
-    position: relative;
-    bottom: 455px;
-    right: 10%;
-}
- 
-    .h2concept {
-   border-left: none;
-    padding-left: 30px;
-    margin-bottom: 80px;
-}
-    .conceptp {
-        position: relative;
-        z-index: 5;
-        text-align: center;
-    }
     
 }
 
@@ -617,53 +563,7 @@ h1 {
 }
 
 @media screen and (min-width:768px) and ( max-width:991px){
-    .about {
-    margin: -400px auto 0 auto;
-    max-width: 800px;
-}
-    .a-p1, .a-p2, .a-p3 {
-    border: none;
-    position: relative;
-    left: 116%;
-    top: -14px;
-}
-    .w-p {
-    width: 43%;
-    position: relative;
-    top: -207px;
-    left: 27px;
-}
-    .w-p1 {
-    width: 41%;
-    position: relative;
-    top: -207px;
-    left: 27px;
-}
-    .worries1sp, .worries2sp, .worries3sp {
-    border: solid 1px #CCCCCC;
-    height: 262px;
-    margin-bottom: 20px;
-}
-    .aboutspan {
-    position: relative;
-    left: 50%;
-    top: 25px;
-    z-index: 5;
-}
-   
-    .h2about {
-    padding-left: 30px;
-    margin-bottom: 20px;
-    text-align: center;
-        border: none;
-}
-    .aboutp {
-    text-align: center;
-    margin-bottom: 30px;
-}
-    .worries1,.worries2,.worries3 {
-        display: none;
-    }
+    
 }
 
 @media screen and (min-width:1000px) {
@@ -726,16 +626,7 @@ div.gallery {
 }
 
 @media screen and (min-width:576px) and ( max-width:991px){
-    .picturegellery,.picturegellery1 {
-        display: none;
-    }
-    .gpic{
-        width: 35%;
-        padding: 5px;
-    }
-    .picturegellery2sp {
-        margin-bottom: 35px;
-    }
+    
 }
 
 @media screen and (min-width:991px) {
@@ -792,62 +683,15 @@ div.gallery {
      Menu　メディアクエリ
 ===========================*/
 @media screen and (max-width:576px) {
-   .menu1 {
-    justify-content: space-between;
-    width: 100%;
-       position: relative;
-}
+   
 }
 
 @media screen and (min-width:576px) and ( max-width:768px) {
-    .manu {
-    padding-top: 230px ;
-    margin: 0 auto;
-    max-width: 550px;
-}
-    .menu1 {
-
-    justify-content: space-between;
-    width: 100%;
-}
-    
+   
 }
 
 @media screen and (min-width:768px) and ( max-width:1000px){
-    .manu {
-    padding-top: 230px ;
-    margin: 0 auto;
-    max-width: 800px;
-}
-    .manup {
-    margin-bottom: 25px;
-    font-size: 13px;
-}
-    .manunaiyou {
-    background-color: rgba(232,226,221,0.7);
-    height: 277px;
-    letter-spacing: 0.2em;
-    line-height: 200%;
-    width: 75%;
-    position: relative;
-    top: 26px;
-    left: 12%;
-    z-index: 2;
-    display: table;
-    padding: 50px;
-}
-    .menupic {
-    position: relative;
-    top: -234px;
-    right: -21%;
-}
-   .m-pic {
-    width: 140%;
-    height: 259px;
-    position: relative;
-    left: -13%;
-    top: -9px;
-}
+   
 }
 
 @media screen and (min-width:1000px) {
@@ -931,12 +775,7 @@ dd {
 }
 
 @media screen and (min-width:768px) and ( max-width:1000px){
-    .blog {
-    margin: 250px 0px;
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 50px;
-}
+    
 }
 /*===========================
            Access
@@ -985,36 +824,10 @@ dd {
 
 @media screen and (min-width:576px) and ( max-width:768px) {
     
-    
-    .access {
-    padding-top: 130px ;
-    margin: 0 auto;
-    max-width: 550px;
-    margin-bottom: 200px;
-}
 }
 
 @media screen and (min-width:768px) and ( max-width:1000px){
-    .access {
-    padding-top: 130px ;
-    margin: 0 auto;
-    max-width: 800px;
-    margin-bottom: 200px;
-}
-    .accessp {
-    background-color: rgba(242,242,242,0.7);
-    padding: 30px 50px;
-    letter-spacing: 0.15em;
-    width: 80%;
-    margin: 0 50px;
-    margin: 0 atuo;
-    /* text-align: center; */
-}
     
-.map {
-    text-align: center;
-    padding-top: 20px;
-}
 }
 
 @media screen and (min-width:1000px) {
@@ -1064,10 +877,5 @@ footer{
 }
 
 @media screen and (min-width:768px) and ( max-width:1000px){
-    .footerul {
-    display: flex;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
+   
 }
