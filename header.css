@@ -752,11 +752,6 @@ div.gallery {
     margin: 0 auto;
     max-width: 1000px;
 }
-.menu1 {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
 
 .h2manu {
     border-left: 3px solid #999999;
@@ -797,7 +792,11 @@ div.gallery {
      Menu　メディアクエリ
 ===========================*/
 @media screen and (max-width:576px) {
-    
+   .menu1 {
+    justify-content: space-between;
+    width: 100%;
+       position: relative;
+}
 }
 
 @media screen and (min-width:576px) and ( max-width:768px) {
@@ -806,6 +805,12 @@ div.gallery {
     margin: 0 auto;
     max-width: 550px;
 }
+    .menu1 {
+
+    justify-content: space-between;
+    width: 100%;
+}
+    
 }
 
 @media screen and (min-width:768px) and ( max-width:1000px){
@@ -814,22 +819,46 @@ div.gallery {
     margin: 0 auto;
     max-width: 800px;
 }
-    .menupic {
-    width: 45%;
-    position: relative;
-    top: -70px;
-    right: 13%;
-}
     .manup {
     margin-bottom: 25px;
     font-size: 13px;
 }
-    
+    .manunaiyou {
+    background-color: rgba(232,226,221,0.7);
+    height: 277px;
+    letter-spacing: 0.2em;
+    line-height: 200%;
+    width: 75%;
+    position: relative;
+    top: 26px;
+    left: 12%;
+    z-index: 2;
+    display: table;
+    padding: 50px;
+}
+    .menupic {
+    position: relative;
+    top: -234px;
+    right: -21%;
+}
+   .m-pic {
+    width: 140%;
+    height: 259px;
+    position: relative;
+    left: -13%;
+    top: -9px;
+}
 }
 
 @media screen and (min-width:1000px) {
     .picturegellerysp,.picturegellery1sp,.picturegellerysp {
     display: none;
+}
+    
+   .menu1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 }
 
@@ -905,6 +934,7 @@ dd {
     .blog {
     margin: 250px 0px;
     text-align: center;
+    margin-top: 0;
 }
 }
 /*===========================
