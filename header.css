@@ -418,7 +418,36 @@ h1 {
 　　　 concept　メディアクエリ
 ===========================*/
 @media screen and (max-width:576px) {
-    
+    .p1, .p2, .p3 {
+    margin-bottom: 30px;
+    font-size: 12.2px;
+}
+    .c-picture3 {
+    width: 120%;
+    position: relative;
+    bottom: 455px;
+    /* top: 67%; */
+    right: 13%;
+    bottom: 515px;
+}
+    .a-p1, .a-p2, .a-p3 {
+    border: none;
+    /* position: relative; */
+    left: 98%;
+    top: -14px;
+}
+    .w-p {
+    width: 43%;
+    position: relative;
+    top: -244px;
+    left: 27px;
+}
+    .w-p1 {
+    width: 41%;
+    position: relative;
+    top: -251px;
+    left: 27px;
+}
 }
 
 @media screen and (min-width:576px) and ( max-width:768px) {
