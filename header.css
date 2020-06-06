@@ -216,9 +216,11 @@ h1 {
     list-style: none;
         line-height: 35px;
 }
-    .nav_menu_ul {
+    ul.nav_menu_ul {
     padding-left:0px;
 }
+ }
+
 @media screen and (min-width:576px) and ( max-width:768px) {
    /*=== ハンバーガー用 ===*/
     .nav_toggle {
