@@ -217,7 +217,7 @@ h1 {
         line-height: 35px;
 }
     ul.nav_menu_ul {
-    padding-left:0px;
+    padding-inline-start:0px;
 }
  }
 
