@@ -730,6 +730,50 @@ div#concept.concept {
     }
 }
 
+@media　screen and (max-width:576px) and (-ms-high-contrast: none){
+            .about {
+        padding-top: 0;
+        margin-top: -230px;
+    }
+    .worries1,.worries2,.worries3 {
+        display: none;
+    }
+    .worries1sp,.worries2sp,.worries3sp {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .w-p1{
+        width: 45%;
+    }
+    .a-p1 {
+    position: relative;
+    top: 12px;
+    right: 6%;
+}
+    .a-p3 {
+    position: relative;
+    top: 12px;
+    right: 6%;
+}
+    .a-p2 {
+    position: relative;
+    top: 12px;
+    left: -7%;
+}
+    .aboutspan {
+    position: relative;
+    top: -10px;
+    left: 4%;
+    z-index: 5;
+    color: #5d5b59;
+    opacity: 0.9;
+    font-size: 53px;
+}
+    .h2about {
+        font-size: 35px;
+    }
+}
+
 @media screen and (min-width:576px) and ( max-width:768px) {
     .about {
         padding-top: 0;
