@@ -5,6 +5,7 @@
 ===========================*/
 body {
     font-family: ro-nikkatsu-sei-kai-std, serif;
+    margin: 0;
 }
 
 h2 {
@@ -36,9 +37,7 @@ h2 {
     width: 570px;
     margin: 0 auto;
 }
-    body {
-        margin: 0;
-    }
+   
 }
 
 @media screen and (min-width:768px) and ( max-width:991px){
