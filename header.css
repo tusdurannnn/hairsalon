@@ -751,19 +751,19 @@ div#concept.concept {
     position: relative;
     top: 12px;
     right: 6%;
-    width: 185px;
+    width: 178px;
 }
     _::-webkit-full-page-media, _:future, :root .a-p3 {
     position: relative;
     top: 12px;
     right: 6%;
-    width: 185px;
+    width: 178px;
 }
     _::-webkit-full-page-media, _:future, :root .a-p2 {
     position: relative;
     top: 12px;
     left: -7%;
-    width: 185px;
+    width: 178px;
 }
     _::-webkit-full-page-media, _:future, :root .w-p {
     width: 43%;
@@ -995,7 +995,7 @@ div.gallery {
 }
    .a-p1,.a-p2,.a-p3 {
     position: relative;
-    top: 39px;
+    top: 12px;
     right: 6%;
     font-size: 12px;
     padding: 10px;
