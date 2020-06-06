@@ -4,7 +4,6 @@
             ALL
 ===========================*/
 body {
-    margin: 0px;
     font-family: ro-nikkatsu-sei-kai-std, serif;
 }
 
@@ -13,14 +12,38 @@ h2 {
     letter-spacing: 0.2em;
 }
 
-.wrapper {
-    margin: 0 auto;
-}
-
 .cleaarfix {
     clear: both;
 }
 
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:576px) {
+    .wrapper {
+    width: 400px;
+    margin: 0 auto;
+}
+    p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:576px) and ( max-width:768px) {
+    .wrapper {
+    width: 570px;
+    margin: 0 auto;
+}
+}
+
+@media screen and (min-width:768px) and ( max-width:991px){
+    .wrapper {
+    width: 700px;
+    margin: 0 auto;
+}
+}
 /*===========================
           header
 ===========================*/
@@ -52,7 +75,8 @@ a.reserve:hover {
 
 li {
     list-style: none;
-    padding: 5px 30px;
+    padding: 0 30px;
+    line-height: 70px;
 }
 
 header {
@@ -65,6 +89,7 @@ header {
     width: 100%;
     position: fixed;
     z-index: 10;
+    height: 70px;
 }
 
 .mainimage {
@@ -153,6 +178,7 @@ h1 {
     /*=== ハンバーガー以外 ===*/
     header {
         background-color: rgba(255,255,255,0);
+        height: 40px;
     }
     
     a {
@@ -186,7 +212,7 @@ h1 {
     
     li {
     list-style: none;
-    padding: 20px;
+        line-height: 35px;
 }
 }
 @media screen and (min-width:576px) and ( max-width:768px) {
@@ -243,8 +269,9 @@ h1 {
     visibility: visible;
 }
     /*=== ハンバーガー以外 ===*/
-    header {
+   header {
         background-color: rgba(255,255,255,0);
+        height: 50px;
     }
     
     a.reserve {
@@ -270,7 +297,7 @@ h1 {
     }
     li {
     list-style: none;
-    padding: 20px;
+    line-height: 50px;
 }
 }
 
@@ -330,6 +357,7 @@ h1 {
     /*=== ハンバーガー以外 ===*/
     header {
         background-color: rgba(255,255,255,0);
+        height: 60px;
     }
     
     a.reserve {
@@ -352,7 +380,7 @@ h1 {
 }
     li {
     list-style: none;
-    padding: 20px;
+    line-height: 60px;
 }
 }
 
@@ -362,11 +390,13 @@ h1 {
 } 
 }
 
-
 /*===========================
-          concept
+           concept
 ===========================*/
 
+div#concept.concept {
+    margin-top: 150px;
+}
 
 .h2concept {
    border-left: 3px solid #999999;
@@ -376,7 +406,7 @@ h1 {
 
 .moreconcept {
     background-color: #4D4D4D;
-    padding: 15px;
+    padding: 13px 15px;
     color: #fff;
 }
 
@@ -387,52 +417,154 @@ h1 {
 .p1,.p2,.p3 {
     margin-bottom: 30px;
 }
-
 .p4 {
     margin-bottom: 50px;
+    font-size:18px;
 }
 
 .c-picture {
     justify-content: space-between;
     display: flex;
     flex-direction: column;
-    margin-left: 70px;
 }
 
 .c-picture1  {
-    width: 90%;
+    width: 75%;
 }
 
-.c-picture2  {
-    width: 90%;
+.c-picture2 {
+    width: 70%;
     position: relative;
-    top: 13%;
-    left: 50%;
+    top: 12%;
+    left: 37%;
 }
 
 .conceptp {
     line-height: 200%;
     letter-spacing: 0.15em;
 }
+
 /*===========================
 　　　 concept　メディアクエリ
 ===========================*/
 @media screen and (max-width:576px) {
-    
+     .c-picture2,.c-picture1{
+        display: none;
+    }
+     .concept {
+        padding-top: 0px;
+    }
+    .p1, .p2, .p3 {
+        font-size: 12px;
+        margin-bottom: 15px;
+}
+    .p4 {
+        font-size: 13px;
+        margin-bottom: 25px;
+    }
+    .conceptp {
+        position: relative;
+        z-index: 2;
+        padding-left: 30px;
+        line-height: 140%;
+    }
+    .h2concept {
+        position: relative;
+        z-index: 2;
+        border: none;
+        margin-bottom: 0;
+        padding-bottom: 10px;
+        font-size: 35px;
+}
+    .c-picture3 {
+    position: relative;
+    left: 0;
+    bottom: 363px;
+    height: 330px;
+}
+    .moreconcept {
+    background-color: #4D4D4D;
+    padding: 6px;
+    color: #fff;
+    font-size: 13px;
+}
 }
 
 @media screen and (min-width:576px) and ( max-width:768px) {
  .concept {
     padding-top: 170px;
-    display: flex;
     margin: 0 auto;
     max-width: 550px;
+}
+    .c-picture2,.c-picture1{
+        display: none;
+    }
+    
+    .concept {
+        padding-top: 0px;
+    }
+    .p1, .p2, .p3 {
+    font-size: 12px;
+        margin-bottom: 15px;
+}
+    .p4 {
+        font-size: 13px;
+        margin-bottom: 25px;
+    }
+    .c-picture3 {
+    position: relative;
+    left: 0;
+    bottom: 363px;
+    height: 400px;
+}
+    .conceptp {
+        position: relative;
+        z-index: 2;
+        padding-left: 30px;
+        line-height: 140%;
+    }
+    .h2concept {
+        position: relative;
+        z-index: 2;
+        border: none;
+        margin-bottom: 0;
+        padding-bottom: 10px;
+        font-size: 35px;
+}
+    .moreconcept {
+    background-color: #4D4D4D;
+    padding: 6px;
+    color: #fff;
+    font-size: 13px;
 }
     
 }
 
 @media screen and (min-width:768px) and ( max-width:991px){
-    
+    .c-picture2 {
+    width: 58%;
+    position: relative;
+    top: 18%;
+    left: 33%;
+}
+    .c-picture1 {
+    width: 60%;
+}
+    .conceptp {
+    line-height: 200%;
+    letter-spacing: 0.15em;
+    font-size: 13px;
+}
+    .p4 {
+    font-size: 14px;
+}
+    .c-picture3 {
+        display: none;
+    }
+    .conceptdiv {
+    display: flex;
+    justify-content:space-around;
+}
 }
 
 
@@ -442,20 +574,25 @@ h1 {
 }
     .concept {
     padding-top: 170px ;
-    display: flex;
     margin: 0 auto;
     max-width: 1000px;
 }
+    .c-picture3 {
+        display: none;
+    }
+    .conceptdiv {
+    display: flex;
+    justify-content:space-around;
+}
 
 }
+
 /*===========================
           About
 ===========================*/
 
 .about {
     padding-top: 230px;
-    margin: 0 auto;
-    max-width: 1000px;
 } 
 
 .h2about {
@@ -465,14 +602,7 @@ h1 {
 }
 
 .aboutp {
-    padding-left: 25p
-        .c-picture2 {
-    width: 72%;
-    position: relative;
-    top: 16%;
-    left: 29%;
-}x;
-    margin-bottom: 80px;
+    padding-left: 25px;
 }
 
 .worries1 {
@@ -552,27 +682,136 @@ h1 {
 }
 
 /*===========================
-     About　メディアクエリ
+　　　 About　メディアクエリ
 ===========================*/
 @media screen and (max-width:576px) {
-    
+   .about {
+        padding-top: 0;
+        margin-top: -150px;
+    }
+    .worries1,.worries2,.worries3 {
+        display: none;
+    }
+    .worries1sp,.worries2sp,.worries3sp {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .w-p1{
+        width: 45%;
+    }
+    .a-p1 {
+    position: relative;
+    top: 39px;
+    right: 6%;
+}
+    .a-p3 {
+    position: relative;
+    top: 53px;
+    right: 6%;
+}
+    .a-p2 {
+    position: relative;
+    top: 36px;
+    left: -7%;
+}
+    .aboutspan {
+    position: relative;
+    top: 3px;
+    left: 4%;
+    z-index: 5;
+    color: #5d5b59;
+    opacity: 0.9;
+    font-size: 53px;
+}
+    .h2about {
+        font-size: 35px;
+    }
 }
 
 @media screen and (min-width:576px) and ( max-width:768px) {
-    
+    .about {
+        padding-top: 0;
+        margin-top: -150px;
+    }
+    .worries1,.worries2,.worries3 {
+        display: none;
+    }
+    .worries1sp,.worries2sp,.worries3sp {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .w-p1{
+       width: 45%; 
+    }
+    .a-p1 {
+    position: relative;
+    top: 39px;
+    right: 6%;
+}
+    .a-p3 {
+    position: relative;
+    top: 53px;
+    right: 6%;
+}
+    .a-p2 {
+    position: relative;
+    top: 36px;
+    left: -7%;
+}
+    .a-p1, .a-p2, .a-p3 {
+    border: solid 2px #CCCCCC;
+    padding: 16px;
+    display: inline;
+    letter-spacing: 0.15em;
+    width: 380px;
+    height: 110px;
+    font-size: 20px;
+    line-height: 170%;
+    display: table-cell;
+    vertical-align: middle;
+        font-size: 13px;
+}
+    .aboutspan {
+    position: relative;
+    top: 3px;
+    left: 4%;
+    z-index: 5;
+    color: #5d5b59;
+    opacity: 0.9;
+    font-size: 53px;
+}
 }
 
 @media screen and (min-width:768px) and ( max-width:991px){
-    
+    .a-p1,.a-p2,.a-p3 {
+        font-size: 14px;
+    }
+    .a-p1, .a-p3 {
+    position: relative;
+    top: 34px;
+    right: 2%;
+}
+    .a-p2 {
+    position: relative;
+    top: 26px;
+    left: -1%;
+}
+    .aboutspan {
+    position: relative;
+    top: -18px;
+    left: 5%;
+    z-index: 5;
+}
+    .worries1sp,.worries2sp,.worries3sp {
+        display: none;
+    }
 }
 
-@media screen and (min-width:1000px) {
-    .worries1sp, .worries2sp, .worries3sp {
-    display: none;
+@media screen and (min-width:1000px) { 
+    .worries1sp,.worries2sp,.worries3sp {
+        display: none;
+    }
 }
-}
-
-
 /*===========================
           Gallery
 ===========================*/
@@ -614,34 +853,50 @@ div.gallery {
 .fab:hover {
     color: #fff;
 }
+
 /*===========================
-    Gallery　メディアクエリ
+     Gallery メディアクエリ
 ===========================*/
+
 @media screen and (max-width:576px) {
+   .picturegellery,.picturegellery1{
+        display: none;
+    }
     
+    .picturegellery2sp {
+        margin-bottom: 30px;
+    }
+    
+    .h2gallery {
+        font-size: 35px;
+    }
 }
 
 @media screen and (min-width:576px) and ( max-width:768px) {
-    
+    .picturegellery,.picturegellery1{
+        display: none;
+    }
+    .picturegellery2sp {
+        margin-bottom: 30px;
+    }
 }
 
-@media screen and (min-width:576px) and ( max-width:991px){
-    
+@media screen and (min-width:768px) and ( max-width:991px){
+    .picturegellerysp,.picturegellery1sp,.picturegellery2sp{
+        display: none;
+    }
 }
 
-@media screen and (min-width:991px) {
-    .picturegellerysp,.picturegellery1sp,.picturegellery2sp {
-    display: none;
+@media screen and (min-width:1000px) {
+    .picturegellerysp,.picturegellery1sp,.picturegellery2sp{
+        display: none;
+    }
 }
-}
-
 /*===========================
             Menu
 ===========================*/
 .manu {
     padding-top: 230px ;
-    margin: 0 auto;
-    max-width: 1000px;
 }
 
 .h2manu {
@@ -652,20 +907,6 @@ div.gallery {
 
 .manup {
     margin-bottom: 25px;
-}
-
-.manunaiyou {
-    background-color: rgba(232,226,221,0.7);
-    height: 240px;
-    letter-spacing: 0.2em;
-    line-height: 200%;
-    width: 50%;
-    position: relative;
-    top: 100px;
-    left: 2%;
-    z-index: 2;
-    display:table;
-    padding: 25px;
 }
 
 .manunaiyou1 {
@@ -683,56 +924,145 @@ div.gallery {
      Menu　メディアクエリ
 ===========================*/
 @media screen and (max-width:576px) {
-   
+   .manunaiyou {
+    background-color: rgba(232,226,221,0.7);
+    letter-spacing: 0.2em;
+    line-height: 200%;
+    padding: 50px 25px;
+    font-size: 13px;
+    position: relative;
+    z-index: 2;
+    position: relative;
+    top: 30px;
+}
+    .m-pic {
+    width: 200%;
+    position: relative;
+    bottom: 129px;
+}
+    .h2manu {
+    font-size: 35px;
+}
+    .w-p {
+    width: 170px;
+    height: 125px;
+}
+    .w-p1 {
+    width: 170px;
+    height: 125px;
+}
+   .a-p1,.a-p2,.a-p3 {
+    position: relative;
+    top: 39px;
+    right: 6%;
+    font-size: 12px;
+    padding: 10px;
+    height: 90px;
+}
+    .aboutspan {
+    font-size: 40px;
+}
+    .h2about {
+    margin-bottom: 10px;
+    }
+    .aboutp {
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+    .manup {
+    font-size: 14px;
+}
 }
 
 @media screen and (min-width:576px) and ( max-width:768px) {
-   
+   .manunaiyou {
+    background-color: rgba(232,226,221,0.7);
+    letter-spacing: 0.2em;
+    line-height: 200%;
+    padding: 50px;
+    position: relative;
+    z-index: 2;
+    top: 32px;
+}
+    .m-pic {
+    width: 200%;
+    position: relative;
+    bottom: 147px;
+    height: 270px;
+}
 }
 
-@media screen and (min-width:768px) and ( max-width:1000px){
-   
+@media screen and (min-width:768px) and ( max-width:991px){
+   .menupic {
+    position: relative;
+    top: -70px;
+}
+    .m-pic {
+        width: 100%;
+    }
+    .manup {
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+    .menu1 {
+    display: flex;
+}
+    .manunaiyou {
+    background-color: rgba(232,226,221,0.7);
+    height: 240px;
+    letter-spacing: 0.2em;
+    line-height: 200%;
+    width: 50%;
+    position: relative;
+    top: 100px;
+    left: 2%;
+    z-index: 2;
+    display:table;
+    padding: 25px;
+}
 }
 
 @media screen and (min-width:1000px) {
-    .picturegellerysp,.picturegellery1sp,.picturegellerysp {
-    display: none;
-}
-    
-   .menu1 {
+    .menu1 {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+}
+    .manunaiyou {
+    background-color: rgba(232,226,221,0.7);
+    height: 240px;
+    letter-spacing: 0.2em;
+    line-height: 200%;
+    width: 50%;
+    position: relative;
+    top: 100px;
+    left: 2%;
+    z-index: 2;
+    display:table;
+    padding: 25px;
 }
 }
-
 /*===========================
             Blog
 ===========================*/
-.blog {
-    margin: 250px 200px;
-    text-align: center;
-}
-
 .h2blog {
     border-bottom: 3px solid #999999;
     margin-bottom: 80px;
     display: inline-block;
+   
 }
-
+.blog {
+    margin:  200px 0;
+    text-align: center;
+}
 .blogall {
     display: flex;
-    max-width: 785px;
-    margin: 0 auto;
+    margin: 0 100px;
 }
 
 .blog1,.blog2,.blog3 {
-    width: 240px;
     border: 1px solid #2D2D2D;
     margin: 0px 15px;
     padding: 15px;
 }
-
 dl {
     text-align: left;
     margin-bottom: 50px;
@@ -762,21 +1092,84 @@ dd {
     color: #999999;
 }
 
+
 /*===========================
       Blog　メディアクエリ
 ===========================*/
 
 @media screen and (max-width:576px) {
-    
+    .blog {
+        margin: 0;
+    }
+    .blogall {
+     margin: 0;
+    }
+    .blog1, .blog2, .blog3 {
+    border: 1px solid #2D2D2D;
+    margin: 0;
+    padding: 10px;
+    width: 33%;
+}
+    .blogpic{
+    width: 100%
+    }
+    .blog-m {
+     margin-left: 10px;   
+    }
+    dd {
+    font-size: 9px;
+}
+    .readmore {
+    font-size: 10px;
+    float: right;
+}
+    dt {
+    font-weight: bold;
+    letter-spacing: 0.12em;
+    padding-bottom: 8px;
+    font-size: 11px;
+}
+    .h2blog {
+    margin-bottom: 30px;
+    font-size: 35px;
+}
 }
 
 @media screen and (min-width:576px) and ( max-width:768px) {
-    
+    .blog {
+     margin: 0;
+    }
+    .blogall {
+     margin: 0;
+    }
+    .blog1, .blog2, .blog3 {
+    border: 1px solid #2D2D2D;
+    margin: 0;
+    padding: 10px;
+    width: 33%;
+}
+    .blogpic{
+    width: 100%
+    }
+    .blog-m {
+     margin-left: 10px;   
+    }
 }
 
-@media screen and (min-width:768px) and ( max-width:1000px){
-    
+@media screen and (min-width:768px) and ( max-width:991px){
+    .blogall {
+    display: flex;
+        margin: 0;
 }
+    
+    .blog1,.blog2,.blog3 {
+    border: 1px solid #2D2D2D;
+    margin: 0px 15px;
+    padding: 15px;
+}
+}
+
+
 /*===========================
            Access
 ===========================*/
@@ -793,17 +1186,6 @@ dd {
     margin-bottom: 70px;
 }
 
-
-
-.accessp {
-    background-color: rgba(242,242,242,0.7);
-    padding: 30px 80px 30px 65px;
-    letter-spacing: 0.15em;
-    position: relative;
-    top: 0px;
-    left: 4%;
-}
-
 .accessp1,.accessp3,.accessp5 {
     font-weight: bold;
     font-size: 20px;
@@ -814,26 +1196,84 @@ dd {
     margin-bottom: 30px;
 }
 
-
+    
 /*===========================
     Access　メディアクエリ
 ===========================*/
 @media screen and (max-width:576px) {
-   
+   .h2access {
+    margin-bottom: 30px;
+    font-size: 35px;
+}
+    .accessp {
+    background-color: rgba(242,242,242,0.7);
+    padding: 30px;
+    letter-spacing: 0.15em;
+}
+    .accessp2, .accessp4,.accessp6 {
+    margin-bottom: 15px;
+    font-size: 12px;
+}
+    .map {
+        margin-top: 30px;
+        width: 50%;
+    }
+    .map1 {
+        display: none;
+    }
+    .accessp1, .accessp3, .accessp5 {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+    .access {
+        margin-bottom: 100px;
+    }
 }
 
 @media screen and (min-width:576px) and ( max-width:768px) {
-    
+    .h2access {
+    margin-bottom: 30px;
+}
+    .accessp {
+    background-color: rgba(242,242,242,0.7);
+    padding: 30px;
+    letter-spacing: 0.15em;
+}
+    .accessp2, .accessp4 {
+    margin-bottom: 15px;
+}
+    .map {
+        margin-top: 30px;
+    }
+    .mapsp {
+        display: none;
+    }
 }
 
 @media screen and (min-width:768px) and ( max-width:1000px){
-    
+    .map {
+        padding-top: 20px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .accessp {
+    width: 93%;
+}
+    .accessp {
+    background-color: rgba(242,242,242,0.7);
+    padding: 30px 80px 30px 65px;
+    letter-spacing: 0.15em;
+    position: relative;
+    top: 0px;
+    left: 4%;
+}
+    .mapsp {
+        display: none;
+    }
 }
 
 @media screen and (min-width:1000px) {
-    .iframe2 {
-    display: none;
-}
     .accessflex {
     display: flex;
     justify-content: space-between;
@@ -849,6 +1289,17 @@ dd {
     padding: 30px 50px;
     letter-spacing: 0.15em;
 }
+    .accessp {
+    background-color: rgba(242,242,242,0.7);
+    padding: 30px 80px 30px 65px;
+    letter-spacing: 0.15em;
+    position: relative;
+    top: 0px;
+    left: 4%;
+}
+    .mapsp {
+        display: none;
+    }
 }
 
 /*===========================
@@ -859,23 +1310,77 @@ footer{
     background-color: #E6E6E6;
 }
 
-.footerul {
-    display: flex;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
 /*===========================
      footer　メディアクエリ
 ===========================*/
 @media screen and (max-width:576px) {
-    
+    .footerul {
+        display: none;
+    }
+    .footerdiv {
+        display: flex;
+    }
+    .footersp {
+        width: 40%;
+    }
+    .footerul1 {
+        width: 60%;
+    }
+    .footerli {
+        width: 25%;
+        text-align: center;
+        margin: 0 30px;
+    }
+    .footerimg {
+        margin: 25px;
+    }
+   
 }
 
 @media screen and (min-width:576px) and ( max-width:768px) {
-    
+    .footerul {
+        display: none;
+    }
+     .footerdiv {
+        display: flex;
+    }
+    .footersp {
+        width: 40%;
+    }
+    .footerul1 {
+        width: 60%;
+    }
+    .footerli {
+        width: 25%;
+        text-align: center;
+        margin: 0 30px;
+    }
+    .footerimg {
+        margin: 50px;
+    }
 }
 
 @media screen and (min-width:768px) and ( max-width:1000px){
-   
+   .footerul {
+    display: flex;
+    max-width: 700px;
+    margin: 0 auto;
+}
+    li.footerli {
+        padding: 0 20px;
+    }
+     .footerdiv {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .footerul {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+}
+    .footerdiv {
+        display: none;
+    }
 }
