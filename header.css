@@ -1328,11 +1328,9 @@ footer{
     .footerul1 {
         width: 60%;
     }
-    .footerli {
-        width: 25%;
-        text-align: center;
-        margin: 0 30px;
-    }
+   .footerli {
+    margin: 0 auto;
+}
     .footerimg {
         margin: 25px;
     }
