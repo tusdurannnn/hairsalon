@@ -207,7 +207,7 @@ h1 {
 }
     h1 {
     letter-spacing: 0.17em;
-    font-size: 20px;
+    font-size: 24px;
 } 
     .span {
         font-size: 10px;
@@ -489,6 +489,7 @@ div#concept.concept {
     font-size: 30px;
 }
     .c-picture3 {
+    margin: 0 10px;
     position: relative;
     left: 0;
     bottom: 363px;
