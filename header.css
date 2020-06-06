@@ -763,10 +763,10 @@ div#concept.concept {
     position: relative;
     top: 12px;
     left: -7%;
-    width: 178px;
+    width: 150px;
 }
     _::-webkit-full-page-media, _:future, :root .w-p {
-    width: 43%;
+    width: 30%;
 }
 }
 
