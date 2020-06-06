@@ -728,6 +728,10 @@ div#concept.concept {
     .h2about {
         font-size: 35px;
     }
+            
+    _:-ms-lang(x),.h2about {
+        font-size: 10px;
+    }
 }
 
 @media　screen and (max-width:576px) and (-ms-high-contrast: none){
