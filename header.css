@@ -703,22 +703,22 @@ div#concept.concept {
     }
     .a-p1 {
     position: relative;
-    top: 39px;
+    top: 12px;
     right: 6%;
 }
     .a-p3 {
     position: relative;
-    top: 53px;
+    top: 12px;
     right: 6%;
 }
     .a-p2 {
     position: relative;
-    top: 36px;
+    top: 12px;
     left: -7%;
 }
     .aboutspan {
     position: relative;
-    top: 3px;
+    top: -10px;
     left: 4%;
     z-index: 5;
     color: #5d5b59;
