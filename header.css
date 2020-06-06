@@ -689,7 +689,7 @@ div#concept.concept {
 @media screen and (max-width:576px) {
    .about {
         padding-top: 0;
-        margin-top: -150px;
+        margin-top: -230px;
     }
     .worries1,.worries2,.worries3 {
         display: none;
@@ -1311,6 +1311,7 @@ dd {
 footer{
     background-color: #E6E6E6;
     height: 70px;
+    line-height:70px;
 }
 
 /*===========================
