@@ -765,7 +765,7 @@ div#concept.concept {
     left: -7%;
     width: 160px;
 }
-    _:-ms-lang(x), .a-p1,.a-p2,.a-p3 {
+    _::-webkit-full-page-media, _:future, .a-p1,.a-p2,.a-p3 {
     position: relative;
     top: 12px;
     right: 7%;
