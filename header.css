@@ -765,8 +765,14 @@ div#concept.concept {
     left: -7%;
     width: 160px;
 }
-    _:-ms-lang(x), .w-p {
-    width: 30%;
+    _:-ms-lang(x), .a-p1,.a-p2,.a-p3 {
+    position: relative;
+    top: 12px;
+    right: 7%;
+    font-size: 11px;
+    padding: 10px;
+    height: 90px;
+}
 }
 }
 
