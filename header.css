@@ -216,14 +216,12 @@ h1 {
    li {
     list-style: none;
     line-height: 29px;
-    padding: 0;
+    padding-left:15px;
 }
     ul.nav_menu_ul {
     padding-inline-start:0px;
             }
-    li.nav_menu_li {
-    padding-left:15px;
-            } 
+    
  }
 
 @media screen and (min-width:576px) and ( max-width:768px) {
