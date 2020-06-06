@@ -78,7 +78,7 @@ a.reserve:hover {
 li {
     list-style: none;
     padding: 0 30px;
-    line-height: 70px;
+    line-height: 40px;
 }
 
 header {
@@ -1310,6 +1310,7 @@ dd {
 
 footer{
     background-color: #E6E6E6;
+    height: 70px;
 }
 
 /*===========================
