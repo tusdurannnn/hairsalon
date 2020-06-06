@@ -730,8 +730,14 @@ div#concept.concept {
     }
             
     _:-ms-lang(x),.h2about {
-        font-size: 10px;
+        font-size: 35px;
     }
+    _:-ms-lang(x),.a-p1 {
+    position: relative;
+    top: 12px;
+    right: 6%;
+    width: 200px;
+}
 }
 
 @media　screen and (max-width:576px) and (-ms-high-contrast: none){
